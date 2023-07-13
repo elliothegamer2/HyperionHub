@@ -4,8 +4,9 @@
 
 <details open>
 <summary>Bookmarklets</summary>
+    ---
 <br>
-    1.<details open>
+   <details open>
     <summary>LTBEEF</summary>
     <br>
     </details>
