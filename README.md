@@ -5,8 +5,8 @@
 <details open>
 <summary>Bookmarklets</summary>
 <br>
-    &nbsp;&nbsp;<details open>
-    <summary>Bookmarklets</summary>
+    <details open>
+     *<summary>Bookmarklets</summary>
     <br>
     </details>
 </details>
