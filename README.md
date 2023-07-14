@@ -2,4 +2,6 @@
 
 ## A Grouping of CrOS Exploits
 
-[![Button]]
+[<kbd> <br> KeyBinding Button <br> </kbd>][KBD]
+
+[![Button Shield]][Shield]
