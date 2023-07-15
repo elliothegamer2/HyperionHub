@@ -1,5 +1,10 @@
 ### HyperionHub
 
-## A Grouping of CrOS Exploits
+## A Group of CrOS Exploits
 
-<code>curl -Ls elliothegamer2.github.io/HyperionHub/ModdedPollen.sh | bash</code>
+
+<details open>
+<summary></summary>
+<br>
+  <code>curl -Ls elliothegamer2.github.io/HyperionHub/ModdedPollen.sh | bash</code>
+</details>
