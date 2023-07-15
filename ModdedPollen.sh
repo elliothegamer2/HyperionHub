@@ -164,10 +164,6 @@ mainrun() {
         if [[ $var4 == "false" ]]; then
             echo -e '\033[1;92mUnblocking:\033[1;93m Clear Browser History'
         fi
-    elif [[ $poli == "5" ]]; then
-        if [[ $var5 == "true" ]]; then
-            echo -e '\033[1;92mBlocking:\033[1;93m Secondary Account Signin'
-        fi
 
         if [[ $var5 == "false" ]]; then
             echo -e '\033[1;92mUnblocking:\033[1;93m Secondary Account Signin'
@@ -311,7 +307,6 @@ echo
     echo -e '2) \033[0;34mInspect:\033[1;93m' $var2
     echo -e '3) \033[0;34mWeb Store Block:\033[1;93m' $var3
     echo -e '4) \033[0;34mClear Browser History\033[1;93m' $var4
-    echo -e '5) \033[0;34mSecondary Account Signin\033[1;93m' $var5
     echo     '==================================================='
     echo -e '\033[1;96m'
 echo
