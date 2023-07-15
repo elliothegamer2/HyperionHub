@@ -116,13 +116,13 @@ mainrun() {
     echo
     echo
     echo
-    echo -e "\033[1;95mMade By Wave Demure"
+    echo -e "\033[1;95mMade By Wave Demure\033[1;93m"
     echo     '==================================================='
     echo -e '1) \033[0;34mBookmarklets:\033[1;93m' $var1
     echo -e '2) \033[0;34mInspect:\033[1;93m' $var2
     echo -e '3) \033[0;34mWeb Store Block:\033[1;93m' $var3
     echo -e '4) \033[0;34mClear Browser History\033[1;93m' $var4
-    echo -e '5) \033[0;34mSecondary Account Signin\033[1;93m' $var5
+    echo -e '6) \033[0;34mReset All\033[1;93m'
     echo     '==================================================='
     echo -e '\033[1;96m'
 
@@ -141,17 +141,42 @@ mainrun() {
         fi
     elif [[ $poli == "2" ]]; then
         if [[ $var2 == "true" ]]; then
-            echo -e '\033[1;92mBlocking:\033[1;93m Inspect'
+            echo -e '\033[1;91mBlocking:\033[1;93m Inspect'
         fi
 
         if [[ $var2 == "false" ]]; then
             echo -e '\033[1;92mUnblocking:\033[1;93m Inspect'
         fi
+    elif [[ $poli == "3" ]]; then
+        if [[ $var3 == "true" ]]; then
+            echo -e '\033[1;92mBlocking:\033[1;93m Web Store Block'
+        fi
+
+        if [[ $var3 == "false" ]]; then
+            echo -e '\033[1;92mUnblocking:\033[1;93m Web Store Block'
+        fi
+
+    elif [[ $poli == "4" ]]; then
+        if [[ $var4 == "true" ]]; then
+            echo -e '\033[1;92mBlocking:\033[1;93m Clear Browser History'
+        fi
+
+        if [[ $var4 == "false" ]]; then
+            echo -e '\033[1;92mUnblocking:\033[1;93m Clear Browser History'
+        fi
+    elif [[ $poli == "5" ]]; then
+        if [[ $var5 == "true" ]]; then
+            echo -e '\033[1;92mBlocking:\033[1;93m Secondary Account Signin'
+        fi
+
+        if [[ $var5 == "false" ]]; then
+            echo -e '\033[1;92mUnblocking:\033[1;93m Secondary Account Signin'
+        fi
     fi
 
     # Running Script
 
-    if [[ $poli == "RemoveWebStoreBlock" ]]; then
+    if [[ $poli == "3" ]]; then
         if [[ $var3 == "true" ]]; then # Webstore false
             mkdir -p /tmp/overlay/etc/opt/chrome/policies/managed
             echo '{"ExtensionInstallBlocklist": ["*"]}' > /tmp/overlay/etc/opt/chrome/policies/managed/policy.json
@@ -169,7 +194,7 @@ mainrun() {
         fi
     fi
 
-    if [[ $poli == "ClearBrowserHistory" ]]; then 
+    if [[ $poli == "4" ]]; then 
         if [[ $var4 == "true" ]]; then # History False
             mkdir -p /tmp/overlay/etc/opt/chrome/policies/managed
             echo '{"AllowDeletingBrowserHistory": false}' > /tmp/overlay/etc/opt/chrome/policies/managed/policy.json
@@ -223,31 +248,30 @@ mainrun() {
         fi
     fi
 
-    if [[ $poli == "SecondaryAccountSignin" ]]; then
-        if [[ $var5 == "false" ]]; then # Secondary True
-        mkdir -p /tmp/overlay/etc/opt/chrome/policies/managed
-            echo '{SecondaryGoogleAccountSigninAllowed": true}' > /tmp/overlay/etc/opt/chrome/policies/managed/policy.json
-            cp -a -L /etc/* /tmp/overlay/etc 2> /dev/null
-            mount --bind /tmp/overlay/etc /etc
-            echo 'true' > check5.txt
-            var5="true"   
-        elif [[ $var5 == "true" ]]; then # Secondary false
-            mkdir -p /tmp/overlay/etc/opt/chrome/policies/managed
-            echo '{SecondaryGoogleAccountSigninAllowed": false}' > /tmp/overlay/etc/opt/chrome/policies/managed/policy.json
-            cp -a -L /etc/* /tmp/overlay/etc 2> /dev/null
-            mount --bind /tmp/overlay/etc /etc
-            echo 'false' > check5.txt
-            var5="false"  
-        fi
-    fi
-
-    if [[ $poli == "ResetAll" ]]; then
+    if [[ $poli == "6" ]]; then
         mkdir -p /tmp/overlay/etc/opt/chrome/policies/managed
         echo '{"DeveloperToolsAvailability": 2, "URLBlocklist": ["https://accounts.google.com/AccountChooser", "chrome://flags", "chrome://inspect", "*/html/crosh.html", "mail.yahoo.com", "zoom.us", "javascript://*"], "AllowDeletingBrowserHistory": false, "ExtensionInstallBlocklist": ["*"]}' > /tmp/overlay/etc/opt/chrome/policies/managed/policy.json
         cp -a -L /etc/* /tmp/overlay/etc 2> /dev/null
         mount --bind /tmp/overlay/etc /etc
+        var1='false' && var2='false' && var3='false' && var4='false' var5='false'
         rm check1.txt && rm check2.txt && rm check3.txt && rm check4.txt && rm check5.txt
     fi
+
+    clear
+    echo
+    echo
+    echo
+    echo
+    echo
+    echo -e "\033[1;95mMade By Wave Demure\033[1;96m"
+    echo     '==================================================='
+    echo -e '1) \033[0;34mBookmarklets:\033[1;93m' $var1
+    echo -e '2) \033[0;34mInspect:\033[1;93m' $var2
+    echo -e '3) \033[0;34mWeb Store Block:\033[1;93m' $var3
+    echo -e '4) \033[0;34mClear Browser History\033[1;93m' $var4
+    echo -e '6) \033[0;34mReset All\033[1;93m'
+    echo     '==================================================='
+    echo -e '\033[1;96m'
 
     # Create Function Rerun
 
@@ -282,12 +306,14 @@ echo
 echo
 echo
 echo
-echo -e "\033[1;95mCurrent Settings"
-echo -e '\033[0;34mBookmarklets:\033[1;93m' $var1
-echo -e '\033[0;34mInspect:\033[1;93m' $var2
-echo -e '\033[0;34mWeb Store Block:\033[1;93m' $var3
-echo -e '\033[0;34mClear Browser History\033[1;93m' $var4
-echo -e '\033[1;95m'
+ echo     '==================================================='
+    echo -e '1) \033[0;34mBookmarklets:\033[1;93m' $var1
+    echo -e '2) \033[0;34mInspect:\033[1;93m' $var2
+    echo -e '3) \033[0;34mWeb Store Block:\033[1;93m' $var3
+    echo -e '4) \033[0;34mClear Browser History\033[1;93m' $var4
+    echo -e '5) \033[0;34mSecondary Account Signin\033[1;93m' $var5
+    echo     '==================================================='
+    echo -e '\033[1;96m'
 echo
 
 # Credits
