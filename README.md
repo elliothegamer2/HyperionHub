@@ -43,12 +43,12 @@ chmod a+x Hyperion.sh
 <details closed>
 <summary>Downgrade</summary>
 <br>
-     Using Chrome100.dev we can downgrade
+     Using Chrome100.dev we can downgrade your chromebook
 </br>
    
    ### What you will need
    
-   -a USB Flash Drive with I recomennd one with 16G
+   -a USB Flash Drive with I recomennd one with 16G <br>
    -a brain you skid
 
    </br>
