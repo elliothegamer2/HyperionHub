@@ -3,6 +3,11 @@
 </h1>
 </br>
 
+
+
+<details open>
+<summary>Hyperion</summary>
+<br>
 ### Clone The Repo and Cd into it
 
  ```bash
@@ -19,5 +24,6 @@ chmod a+x Hyperion.sh
 ### Run the command
 
 ```bash
-   ./Hyperion.sh
+./Hyperion.sh
 ```
+</details>
