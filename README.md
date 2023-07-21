@@ -2,8 +2,7 @@
    HyperionHub        
 </h1>
 
-<h2 align="center">
-   <details closed>
+ <details closed>
       <summary>Hyperion</summary>
       <br>
       well first we need to clone the repo 
@@ -12,4 +11,3 @@
          cd HyperionHub
       </code>
       </details>
-</h2>
