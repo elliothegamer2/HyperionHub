@@ -58,7 +58,7 @@ chmod a+x Hyperion.sh
    Find you chromebook model and download a older version (Recommend to use 107)<br>
    and flash it using the chromebook recovery tool <br>
 
-   [Chrome100]https://chrome100.dev
+   [![Get it on SERVICE](https://gist.github.com/csqrl/0dbc95191f239b631c3874f4ccf114e2/raw/SERVICE.svg)](https://example.com/...)
    
 
 </details>
