@@ -5,7 +5,7 @@
 
 
 
-<details open>
+<details closed>
 <summary>Hyperion</summary>
 <br>
    
