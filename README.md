@@ -35,4 +35,33 @@ chmod a+x Hyperion.sh
 ```bash
 ./Hyperion.sh
 ```
+</details>/
+
+</br>
+
+<details closed>
+<summary>Downgraded</summary>
+<br>
+     Using Chrome100.dev we can downgrade
+</br>
+   ### What you will need
+   -a USB Flash Drive with I recomennd one with 16G
+   -a brain you skid
+
+   </br>
+
+   ###  Getting the file
+   
+   Find you chromebook model and download a older version (Recommend to use 107)<br>
+   and flash it using the chromebook recovery tool <br>
+   
+
+</details>
+
+<br>
+
+<details closed>
+<summary>More Cooming soon</summary>
+<br>
+   
 </details>
