@@ -36,12 +36,12 @@ chmod a+x Hyperion.sh
 ```bash
 ./Hyperion.sh
 ```
-</details>/
+</details>
 
 </br>
 
 <details closed>
-<summary>Downgraded</summary>
+<summary>Downgrade</summary>
 <br>
      Using Chrome100.dev we can downgrade
 </br>
