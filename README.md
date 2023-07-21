@@ -7,8 +7,6 @@
       <br>
       well first we need to clone the repo 
  </br>
-      <code>
-         git clone https://github.com/elliothegamer2/HyperionHub </br>
-         cd HyperionHub
+      <code>git clone https://github.com/elliothegamer2/HyperionHub </br> cd HyperionHub
       </code>
       </details>
