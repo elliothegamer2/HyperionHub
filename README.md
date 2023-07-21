@@ -10,6 +10,7 @@
 <br>
 
 ### What is this doing
+
 </br>
 
 It is a CrOS Policy Editor Called Pollen Made by MecuryWorkshop
@@ -44,7 +45,9 @@ chmod a+x Hyperion.sh
 <br>
      Using Chrome100.dev we can downgrade
 </br>
+   
    ### What you will need
+   
    -a USB Flash Drive with I recomennd one with 16G
    -a brain you skid
 
