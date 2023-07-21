@@ -1,7 +1,7 @@
 <h1 align="center">
    HyperionHub        
 </h1>
-</br>
+<br>
 
 
 
@@ -11,9 +11,9 @@
 
 ### What is this doing
 
-</br>
+<br>
 
-It is a CrOS Policy Editor Called Pollen Made by MecuryWorkshop
+It is a CrOS Policy Editor Called Pollen Made by MecuryWorkshop <br>
 I just Modifieded It so that it is a menu that lets you edit Some Blocked Items
 
 ***THIS MAY NOT WORK FOR YOU DONT BOTHER ME I DONT KNOW WHAT HAPPEN***
@@ -38,20 +38,20 @@ chmod a+x Hyperion.sh
 ```
 </details>
 
-</br>
+<br>
 
 <details closed>
 <summary>Downgrade</summary>
 <br>
      Using Chrome100.dev we can downgrade your chromebook
-</br>
+<br>
    
    ### What you will need
    
    -a USB Flash Drive with I recomennd one with 16G <br>
    -a brain you skid
 
-   </br>
+   <br>
 
    ###  Getting the file
    
