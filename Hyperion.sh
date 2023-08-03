@@ -288,7 +288,7 @@ mainrun() {
         fi
     }
     echo
-    if [[ $poli != "Exit" ]]; then
+    if [[ $poli != "6" ]]; then
         rerun_check
     fi    
 }
