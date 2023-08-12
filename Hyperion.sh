@@ -122,7 +122,6 @@ mainrun() {
     echo -e '2) \033[0;34mInspect:\033[1;93m' $var2
     echo -e '3) \033[0;34mWeb Store Block:\033[1;93m' $var3
     echo -e '4) \033[0;34mClear Browser History\033[1;93m' $var4
-    echo -e '6) \033[0;34mReset All\033[1;93m'
     echo     '==================================================='
     echo -e '\033[1;96m'
 
@@ -244,15 +243,6 @@ mainrun() {
         fi
     fi
 
-    if [[ $poli == "6" ]]; then
-        mkdir -p /tmp/overlay/etc/opt/chrome/policies/managed
-        echo '{"DeveloperToolsAvailability": 2, "URLBlocklist": ["https://accounts.google.com/AccountChooser", "chrome://flags", "chrome://inspect", "*/html/crosh.html", "mail.yahoo.com", "zoom.us", "javascript://*"], "AllowDeletingBrowserHistory": false, "ExtensionInstallBlocklist": ["*"]}' > /tmp/overlay/etc/opt/chrome/policies/managed/policy.json
-        cp -a -L /etc/* /tmp/overlay/etc 2> /dev/null
-        mount --bind /tmp/overlay/etc /etc
-        var1='false' && var2='false' && var3='false' && var4='false' var5='false'
-        rm check1.txt && rm check2.txt && rm check3.txt && rm check4.txt && rm check5.txt
-    fi
-
     clear
     echo
     echo
@@ -287,10 +277,7 @@ mainrun() {
             mainrun
         fi
     }
-    echo
-    if [[ $poli != "6" ]]; then
-        rerun_check
-    fi    
+    echo 
 }
 mainrun
 
